@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Calculator</title>
+  
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #1e2b3a;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 25px;
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+#output {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #2ecc71;
+}
+
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Grade Calculator</h1>
+    <form id="gradeForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="text" id="regno" placeholder="Enter your Register Number" required />
+      
+      <input type="number" id="toc" placeholder="Theory of Computation" required />
+      <input type="number" id="devops" placeholder="DevOps" required />
+      <input type="number" id="mwt" placeholder="Modern Web Technology" required />
+      <input type="number" id="nosql" placeholder="NoSQL" required />
+      <input type="number" id="ooad" placeholder="OOAD" required />
+
+      <button type="submit">Calculate Grade</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+  <script src="grade.js"></script>
+</body>
+</html>
